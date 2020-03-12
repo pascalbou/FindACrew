@@ -13,6 +13,7 @@
 		3F7DE59A241AA7800030C9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7DE599241AA7800030C9D7 /* Assets.xcassets */; };
 		3F7DE59D241AA7800030C9D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7DE59B241AA7800030C9D7 /* LaunchScreen.storyboard */; };
 		3F7DE5A5241AA81A0030C9D7 /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE5A4241AA81A0030C9D7 /* PersonSearchTableViewController.swift */; };
+		3F7DE5A7241AAF4D0030C9D7 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE5A6241AAF4D0030C9D7 /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F7DE59C241AA7800030C9D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7DE59E241AA7800030C9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7DE5A4241AA81A0030C9D7 /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
+		3F7DE5A6241AAF4D0030C9D7 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3F7DE592241AA77D0030C9D7 /* SceneDelegate.swift */,
 				3F7DE596241AA77D0030C9D7 /* Main.storyboard */,
 				3F7DE5A4241AA81A0030C9D7 /* PersonSearchTableViewController.swift */,
+				3F7DE5A6241AAF4D0030C9D7 /* PersonTableViewCell.swift */,
 				3F7DE599241AA7800030C9D7 /* Assets.xcassets */,
 				3F7DE59B241AA7800030C9D7 /* LaunchScreen.storyboard */,
 				3F7DE59E241AA7800030C9D7 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				3F7DE5A5241AA81A0030C9D7 /* PersonSearchTableViewController.swift in Sources */,
 				3F7DE591241AA77D0030C9D7 /* AppDelegate.swift in Sources */,
+				3F7DE5A7241AAF4D0030C9D7 /* PersonTableViewCell.swift in Sources */,
 				3F7DE593241AA77D0030C9D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
