@@ -13,25 +13,42 @@ class PersonSearchTableViewController: UITableViewController {
     // MARK: - Outlets
     @IBOutlet weak var searchBar: UISearchBar!
     
+    // MARK: - Properties
+    var personController = PersonController()
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.delegate = self
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return personController.people.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell", for: indexPath) as? PersonTableViewCell else { return UITableViewCell() }
             
-        cell.nameLabel.text = "Han Solo"
+        let person = personController.people[indexPath.row]
+        cell.person = person
 
         return cell
     }
     
+}
 
+extension PersonSearchTableViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchTerm = searchBar.text else { return }
+        
+        personController.searchForPeopleWith(searchTerm: searchTerm) {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 }
